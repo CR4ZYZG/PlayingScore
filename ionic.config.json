@@ -1,0 +1,7 @@
+{
+  "name": "PlayingScore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
