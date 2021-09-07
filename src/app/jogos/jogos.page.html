@@ -1,9 +1,23 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title>jogos</ion-title>
+  <ion-toolbar class="ion-text-center" color="primary">
+    <ion-title>Jogos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-tabs>
+    <ion-tab-bar class="tab-bar" color="light" slot="top">
+      <ion-tab-button layout="icon-start" tab="tabPerfil">
+        <ion-icon name="star">
+        </ion-icon>
+        <ion-label>Meus Favoritos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button layout="icon-start" tab="tabJogos">
+        <ion-icon name="people"></ion-icon>
+        <ion-label>Jogos de Amigos</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
 </ion-content>
