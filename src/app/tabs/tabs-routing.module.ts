@@ -16,6 +16,14 @@ const routes: Routes = [
         loadChildren: () => import('../jogos/jogos.module').then(m => m.JogosPageModule)
       },
       {
+        path: 'tabJogos/tabJogosFavoritos',
+        loadChildren: () => import('../jogos-favoritos/jogos-favoritos.module').then( m => m.JogosFavoritosPageModule)
+      },
+      {
+        path: 'tabJogos/tabJogosAmigos',
+        loadChildren: () => import('../jogos-amigos/jogos-amigos.module').then( m => m.JogosAmigosPageModule)
+      },
+      {
         path: 'tabPartidas',
         loadChildren: () => import('../partidas/partidas.module').then(m => m.PartidasPageModule)
       },
