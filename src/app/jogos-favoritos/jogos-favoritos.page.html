@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>jogos_favoritos</ion-title>
+  <ion-toolbar class="ion-text-center" color="primary">
+      <ion-buttons>
+        <ion-back-button defaultHref="tabs"></ion-back-button>
+        <ion-title>Jogos</ion-title>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-tabs>
+    <ion-tab-bar class="tab-bar" color="light" slot="top">
+      <ion-tab-button layout="icon-start">
+        <ion-icon name="star"></ion-icon>
+        <ion-label>Meus Favoritos</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
