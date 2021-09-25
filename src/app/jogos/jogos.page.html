@@ -2,22 +2,51 @@
   <ion-toolbar class="ion-text-center" color="primary">
     <ion-title>Jogos</ion-title>
   </ion-toolbar>
+
+  <ion-toolbar class="tab-bar-sub" color="light">
+    <ion-tabs>
+      <ion-tab-bar class="tab-bar-sub" color="light" slot="top">
+        <ion-tab-button layout="icon-start" tab="tabJogosFavoritos">
+          <ion-icon name="star"></ion-icon>
+          <ion-label>Meus Favoritos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button layout="icon-start" tab="tabJogosAmigos">
+          <ion-icon name="people"></ion-icon>
+          <ion-label>Jogos de Amigos</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-tabs>
-    <ion-tab-bar class="tab-bar" color="light" slot="top">
-      <ion-tab-button layout="icon-start" tab="tabJogosFavoritos">
-        <ion-icon name="star">
-        </ion-icon>
-        <ion-label>Meus Favoritos</ion-label>
-      </ion-tab-button>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/user.svg" >
+      </ion-avatar>
 
-      <ion-tab-button layout="icon-start" tab="tabJogosAmigos">
-        <ion-icon name="people"></ion-icon>
-        <ion-label>Jogos de Amigos</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+      <ion-label class="ion-text-wrap">
+        <ion-text color="dark">
+          <h3>Usuário Logado</h3>
+          <p>FIFA20</p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
 
+    <ion-card-content>
+      Campeonato de FIFA20, um jogo eletrônico de futebol desenvolvido e publicado pela EA Sports, lançado mundialmente em 19 de setembro de 2019
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-button size="small" fill="outline" slot="end">Ver Regras</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button size="large">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
