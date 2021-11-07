@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+        <ion-title>FIFA20</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item color="light">
+    <ion-label position="floating">Número de Jogadores</ion-label> 
+    <ion-input type="number" (ionInput)="updateTotalPlayers($event.target.value)" value="{{QtdJogadores"></ion-input> 
+  </ion-item>
+
+  <app-contador *ngFor="let p of players" | async" Score={{p.Score}} Name={{p.Name}}></app-contador>
+ 
+
+</ion-content>
